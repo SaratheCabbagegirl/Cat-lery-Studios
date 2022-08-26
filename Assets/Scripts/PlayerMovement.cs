@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMove = 0f;
     bool jumping = false;
     bool interacting = false;
+    public UnityEvent meowSound;
     //float timer = 0f;
 
     // Update is called once per frame
@@ -30,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Interact"))
         {
             interacting = true;
-            
+            meowSound.Invoke();
         }
         else if (Input.GetButtonUp("Interact"))
         {
