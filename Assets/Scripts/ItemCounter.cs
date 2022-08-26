@@ -13,7 +13,7 @@ public class ItemCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (counter > 0) {
+        if (counter > 4) {
             //load next scene
             SceneManager.LoadScene("Title Screen");
         } 
