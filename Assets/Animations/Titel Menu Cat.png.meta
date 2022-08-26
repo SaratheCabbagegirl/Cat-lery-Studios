@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1f04430399e6ad246a2b3423cc613d74
+guid: 10622c8dfad83334e9e128bda5e5b1e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -120,11 +120,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 17
-        y: 1402
-        width: 1678
-        height: 1354
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 1472
+        width: 1718
+        height: 1284
+      alignment: 9
+      pivot: {x: 0.5, y: 0.06}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Titel Menu Cat_1
       rect:
         serializedVersion: 2
-        x: 1930
-        y: 1362
-        width: 1739
-        height: 1394
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1985
+        y: 1487
+        width: 1684
+        height: 1269
+      alignment: 9
+      pivot: {x: 0.5000001, y: 0.036972683}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,8 +165,8 @@ TextureImporter:
         y: 0
         width: 1670
         height: 1322
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.4700816, y: 0.035133}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: Titel Menu Cat_3
       rect:
         serializedVersion: 2
-        x: 1920
+        x: 2015
         y: 0
-        width: 1764
-        height: 1317
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 1669
+        height: 1307
+      alignment: 9
+      pivot: {x: 0.5254918, y: 0.033368114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
