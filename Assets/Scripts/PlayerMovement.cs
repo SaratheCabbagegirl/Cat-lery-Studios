@@ -11,14 +11,13 @@ public class PlayerMovement : MonoBehaviour
     private float horizontalMove = 0f;
     bool jumping = false;
     bool interacting = false;
+    //float timer = 0f;
 
     // Update is called once per frame
     void Update()
     {
-
         animator.SetFloat("speed", Mathf.Abs(horizontalMove));
         animator.SetBool("interacting", interacting);
-        
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
@@ -26,11 +25,6 @@ public class PlayerMovement : MonoBehaviour
         {
             jumping = true;
             animator.SetTrigger("jumpingTrigger");
-        }
-
-        if (Input.GetButtonDown("Catwalk"))
-        {
-            animator.SetTrigger("catwalk");
         }
 
         if (Input.GetButtonDown("Interact"))

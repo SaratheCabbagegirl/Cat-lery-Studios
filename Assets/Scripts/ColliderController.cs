@@ -5,36 +5,28 @@ using UnityEngine;
 public class ColliderController : MonoBehaviour
 {
     [SerializeField] private GameObject m_colliderParent;
+    public Collider2D m_collider;
+    public Collider2D catCollider;
 
-    //public GameObject player;
-    //private bool interacting = false;
     public CharacterController2D characterController;
     void Start()
     {
-        
-        //characterController = player.GetComponent<CharacterController2D>();
+        Physics2D.IgnoreCollision(m_collider, catCollider, true);
         characterController.OnInteractEvent.AddListener(InteractListener);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
- 
-    }
 
     void InteractListener(bool interacting)
     {
         if (interacting)
         {
-            m_colliderParent.SetActive(true);
-            //m_leftCollider.enabled = false;
-            //m_rightCollider.enabled = false;
+            Physics2D.IgnoreCollision(m_collider, catCollider, false);
+            //m_colliderParent.SetActive(true);
         }
         else
         {
-            m_colliderParent.SetActive(false);
-            //m_leftCollider.enabled = true;
-            //m_rightCollider.enabled = true;
+            Physics2D.IgnoreCollision(m_collider, catCollider, true);
+            //m_colliderParent.SetActive(false);
         }
     }
 }

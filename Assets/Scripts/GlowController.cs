@@ -11,7 +11,6 @@ public class GlowController : MonoBehaviour
     {
         if (collider.gameObject.tag == "Cat")
         {
-            Debug.Log("Glowing");
             glowSprite.SetActive(true);
         }
     }
